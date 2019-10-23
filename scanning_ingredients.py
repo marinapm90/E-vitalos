@@ -6,7 +6,7 @@ import numpy as np
 
 
 def capture_food():
-    url = 'http://192.168.0.154:8080/video'
+    url = 'http://192.168.20.122:8080/video'
     cap = cv2.VideoCapture(url)
     while True:
         ret, frame = cap.read()
@@ -31,18 +31,18 @@ def find_text(text):
 
 def get_homogenic_data(result, result_2):
     values = []
-    for value in result:
+    for value in result:        
         values.append(value)
-    for value in result_2:
+    for value in result_2:       
         values.append(value)
     for value in values:
         if "E-" in value:
-            values = [item.replace('E-','E') for item in values]
+            values = [item.replace('E-','E') for item in values]           
         else:
             return values
 
 
-def get_allergies_dataframe(values):
-    allergies = additives[additives['id'].isin(values)]
+def get_allergies_dataframe(df, values):
+    allergies = df[df['id'].isin(values)]
     return allergies
 
