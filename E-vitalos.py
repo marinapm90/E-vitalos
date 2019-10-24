@@ -12,7 +12,10 @@ def main():
     valores = get_homogenic_data(resultado_1, resultado_2)
     allergies = get_allergies_dataframe(additives, valores)
     print(allergies)
-
+    print("------------------------------------------------")
+    #barcodeData = capture_barcode
+    #nutri = nutri_score
+    #print(nutri)
 
 if __name__=="__main__":
     main()

@@ -6,12 +6,13 @@ import numpy as np
 
 
 def capture_food():
-    url = 'http://192.168.20.122:8080/video'
+    url = 'http://192.168.0.154:8080/video'
     cap = cv2.VideoCapture(url)
     while True:
         ret, frame = cap.read()
+        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         if frame is not None:
-            cv2.imshow('frame', frame)
+            cv2.imshow('frame', gray)
             cv2.imwrite(filename='saved_img.jpg', img=frame)
         q = cv2.waitKey(1)
         if q == ord("q"):
@@ -37,7 +38,8 @@ def get_homogenic_data(result, result_2):
         values.append(value)
     for value in values:
         if "E-" in value:
-            values = [item.replace('E-','E') for item in values]           
+            values = [item.replace('E-','E') for item in values]
+            values = values.apply(lambda item: item.str.strip())           
         else:
             return values
 
