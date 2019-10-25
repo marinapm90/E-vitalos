@@ -13,9 +13,9 @@ def main():
     allergies = get_allergies_dataframe(additives, valores)
     print(allergies)
     print("------------------------------------------------")
-    #barcodeData = capture_barcode
-    #nutri = nutri_score
-    #print(nutri)
+    barcodeData = capture_barcode()
+    nutri = nutri_score(barcodeData)
+    print(nutri)
 
 if __name__=="__main__":
     main()
