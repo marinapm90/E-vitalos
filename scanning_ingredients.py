@@ -6,13 +6,12 @@ import numpy as np
 
 
 def capture_food():
-    url = 'http://192.168.0.154:8080/video'
+    url = 'http://192.168.20.143:8080/video'
     cap = cv2.VideoCapture(url)
     while True:
         ret, frame = cap.read()
-        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         if frame is not None:
-            cv2.imshow('frame', gray)
+            cv2.imshow('frame', frame)
             cv2.imwrite(filename='saved_img.jpg', img=frame)
         q = cv2.waitKey(1)
         if q == ord("q"):

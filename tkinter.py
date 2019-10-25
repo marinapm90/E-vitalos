@@ -1,19 +1,6 @@
-#import tkinter as tk
-#from tkinter import *
-#from tkinter import ttk
+import tkinter as tk
+from tkinter import *
 
-
-#def ytd():
- #   print('2,500,000,000')
-
-#prueba= tkinter.Tk()
-
-#btn1 = ttk.Button(rw, text='YTD SALES')
-
-#btn1.pack()
-
-#btn1.config(command=ytd)
-
-import tkinter
-
-tkinter._test()
+root = tk.Tk()
+#ttk.Button(root, text="Hello World").grid()
+root.mainloop()
