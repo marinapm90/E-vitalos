@@ -11,7 +11,8 @@ def capture_food():
     while True:
         ret, frame = cap.read()
         if frame is not None:
-            cv2.imshow('frame', frame)
+            blur_image = cv2.GaussianBlur(frame, (7,7), 0)
+            cv2.imshow('frame', blur_image)
             cv2.imwrite(filename='saved_img.jpg', img=frame)
         q = cv2.waitKey(1)
         if q == ord("q"):
