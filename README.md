@@ -1,6 +1,5 @@
 # E-VITALOS
 
-[TOC]
 
 Este proyecto consiste en el reconocimiento de texto en imágenes para extraer la información de los aditivos que llevan los alimentos que consumimos y tratar de verificar si se trata de alimentos que pueden causar alergias a una persona que padece esofaguitis eosinofílica.
 
