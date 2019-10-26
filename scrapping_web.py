@@ -3,6 +3,7 @@ import pandas as pd
 import requests
 import numpy as np
 
+# Esta función debería dividirla en dos, una para scrappear la web y otra para crear el dataframe.
 
 def get_table_additives():
     url_web = "https://e-aditivos.com/"

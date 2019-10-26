@@ -4,6 +4,7 @@ import pytesseract
 import re
 import numpy as np
 
+# En esta función podría quitar la parte en la que me guarda la imagen.
 
 def capture_food():
     url = 'http://192.168.43.14:8080/video'
