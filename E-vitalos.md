@@ -10,7 +10,7 @@ Además a traves del reconocimiento de códigos de barras y con la **conexión d
 
 
 
-###LIBRERÍAS USADAS
+### LIBRERÍAS USADAS
 
 - BeautifulSoup
 - Pandas
