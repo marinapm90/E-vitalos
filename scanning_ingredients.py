@@ -6,7 +6,7 @@ import numpy as np
 
 
 def capture_food():
-    url = 'http://192.168.20.143:8080/video'
+    url = 'http://192.168.43.14:8080/video'
     cap = cv2.VideoCapture(url)
     while True:
         ret, frame = cap.read()

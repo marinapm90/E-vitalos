@@ -6,7 +6,7 @@ import json
 
 
 def capture_barcode():
-    url = 'http://192.168.20.143:8080/video'
+    url = 'http://192.168.43.14:8080/video'
     cap = cv2.VideoCapture(url)
     lastcode = ""
 
