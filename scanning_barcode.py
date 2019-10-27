@@ -3,10 +3,10 @@ from PIL import Image
 from pyzbar.pyzbar import decode
 import requests
 import json
+from url_camera import url
 
 
 def capture_barcode():
-    url = 'http://192.168.43.14:8080/video'
     cap = cv2.VideoCapture(url)
     lastcode = ""
 

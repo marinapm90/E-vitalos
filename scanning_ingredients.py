@@ -3,11 +3,11 @@ from PIL import Image
 import pytesseract
 import re
 import numpy as np
+from url_camera import url
 
 # En esta función podría quitar la parte en la que me guarda la imagen.
 
 def capture_food():
-    url = 'http://192.168.43.14:8080/video'
     cap = cv2.VideoCapture(url)
     while True:
         ret, frame = cap.read()

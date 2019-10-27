@@ -85,5 +85,8 @@ venv.bak/
 # personal folders
 WORK/
 marina-project/
+#personal
+url_camera.py
+
 
 
