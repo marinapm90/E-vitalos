@@ -116,7 +116,6 @@ pyasn1==0.4.7
 pyasn1-modules==0.2.7
 pycairo==1.16.2
 pycparser==2.19
-pycrypto==2.6.1
 pycups==1.9.73
 PyDispatcher==2.0.5
 Pygments==2.4.2
@@ -135,7 +134,6 @@ python-apt==1.6.4
 python-dateutil==2.8.0
 python-debian==0.1.32
 pytz==2019.2
-pyxdg==0.25
 PyYAML==5.1.2
 pyzbar==0.1.8
 pyzmq==18.0.2

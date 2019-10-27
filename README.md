@@ -23,6 +23,8 @@ Además a traves del reconocimiento de códigos de barras y con la **conexión d
 - Argparse
 - Pprint
 
+En el repositorio se incluye un archivo de [requirements.txt](https://github.com/marinapm90/E-vitalos/blob/master/requirements.txt) para facilitar su instalación.
+
 ### CÁMARA UTILIZADA
 
 Para realizar las fotos utilizaremos la cámara del móvil conectándola a la misma IP que el ordenador, para eso utilizaremos la [APP IP WEBCAM](https://play.google.com/store/apps/details?id=com.pas.webcam&hl=es)
