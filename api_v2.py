@@ -24,5 +24,15 @@ def additive(additive):
     
     return jsonify(file_data[additive])
 
+
+@app.route('/additives/bulk', methods=['POST'])
+def additive_post(additive):
+    
+    with open('./additives.json', 'r') as jsonfile:
+        file_data = json.load(jsonfile)
+    
+    return jsonify(file_data[additive])
+
+
 if __name__ == '__main__':
     app.run(debug=True)
