@@ -1,6 +1,7 @@
 import json
 
-from flask import Flask
+from flask import Flask, jsonify
+
     
 app = Flask(__name__)
 
@@ -9,9 +10,9 @@ app = Flask(__name__)
 def additive(additive):
     
     with open('./additives.json', 'r') as jsonfile:
-        file_data = json.loads(jsonfile.read())
+        file_data = json.load(jsonfile)
     
-    return json.dumps(file_data[additive])
+    return jsonify(file_data[additive])
 
 if __name__ == '__main__':
     app.run(debug=True)
