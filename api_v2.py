@@ -6,7 +6,17 @@ from flask import Flask, jsonify
 app = Flask(__name__)
 
 
-@app.route('/additive/<additive>', methods=['GET'])
+@app.route('/', methods=['GET'])
+def get_additives():
+    
+    with open('./additives.json', 'r') as jsonfile:
+        file_data = json.load(jsonfile)
+    
+    return jsonify(file_data)
+
+
+
+@app.route('/additives/<additive>', methods=['GET'])
 def additive(additive):
     
     with open('./additives.json', 'r') as jsonfile:
