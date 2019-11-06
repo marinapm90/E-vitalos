@@ -38,19 +38,7 @@ def bulk_resolve_additives():
         file_data = json.load(jsonfile)
 
     text = request.get_json()
-    result = re.findall(r'E-\d+', str(text))
-    result_2 = re.findall(r'E\d+', str(text))
-    
-    values = []
-    for value in result:        
-        values.append(value)
-    for value in result_2:       
-        values.append(value)
-    for value in values:
-        if "E-" in value:
-            values = [item.replace('E-','E') for item in values]           
-        else:
-            return values    
+    values = [item.replace("-", "") for item in re.findall(r"E-?\d+", str(text))]
     
     result = {}
         
