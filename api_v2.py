@@ -43,7 +43,7 @@ def bulk_resolve_additives():
     result = {}
         
     for value in values:
-        result[value] = file_data[value]
+        result[value] = file_data[value] if value in file_data else file_data['Default']
         
     return jsonify(result)
 
