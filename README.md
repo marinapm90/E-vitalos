@@ -49,7 +49,7 @@ Para cerrar la cámara y hacer la captura haremos click en la letra "Q"
 
 A continuación nos aparecerán los aditivos que contiene nuestro producto, con la información del origen, categoría, nombre y si es alérgeno o no.
 
-![foto_aditivos](https://raw.githubusercontent.com/marinapm90/E-vitalos/master/outputs/Screenshot%20from%202019-10-26%2002-35-15.png)
+![foto_aditivos](https://raw.githubusercontent.com/marinapm90/E-vitalos/master/Proyecto/outputs/Screenshot%20from%202019-10-26%2002-35-15.png)
 
 
 
@@ -61,7 +61,7 @@ Para cerrar la cámara haremos click en la letra "Q"
 
 A continuación nos aparecerá la información nutricional del producto.
 
-![foto_nutricional](https://raw.githubusercontent.com/marinapm90/E-vitalos/master/outputs/Screenshot%20from%202019-10-26%2002-42-23.png)
+![foto_nutricional](https://github.com/marinapm90/E-vitalos/blob/master/Proyecto/outputs/Screenshot%20from%202019-10-26%2002-42-23.png)
 
 También podemos utilizar ```python3 E-vitalos.py -h``` o ```python3 E-vitalos --help``` para obtener ayuda.
 
