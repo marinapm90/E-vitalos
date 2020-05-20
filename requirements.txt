@@ -45,7 +45,7 @@ googletrans==2.4.0
 goslate==1.5.1
 grpcio==1.24.1
 html5lib==0.999999999
-httplib2==0.9.2
+httplib2==0.18.0
 hyperlink==19.0.0
 identify==1.4.5
 idna==2.8
