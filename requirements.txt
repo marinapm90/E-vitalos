@@ -133,7 +133,7 @@ python-apt==1.6.4
 python-dateutil==2.8.0
 python-debian==0.1.32
 pytz==2019.2
-PyYAML==5.1.2
+PyYAML==5.4
 pyzbar==0.1.8
 pyzmq==18.0.2
 qtconsole==4.4.3
